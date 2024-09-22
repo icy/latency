@@ -34,14 +34,14 @@ https://jmeter.apache.org/usermanual/glossary.html
 
 ### Nginx ingress controller (k8s or kubernetes)
 
-In many log configuration, `latency` is defined as below
+In many log configurations, `latency` is defined as below
 
 ```
 "latency": "$upstream_response_time s"
 ```
 
 See more with, for example https://www.google.com/search?q="latency"%3A+"%24upstream_response_time+s". 
-Elasticsearch has an intergration documentation with this format 
+`Elasticsearch` has an intergration documentation with this format 
 https://web.archive.org/web/20240922181130/https://www.elastic.co/docs/current/integrations/nginx_ingress_controller
 
 So what is `$upstream_response_time`? According to `nginx`'s documentation (https://nginx.org/en/docs/http/ngx_http_upstream_module.html#var_upstream_response_time)
