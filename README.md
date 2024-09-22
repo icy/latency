@@ -46,7 +46,7 @@ https://web.archive.org/web/20240922181130/https://www.elastic.co/docs/current/i
 
 So what is `$upstream_response_time`? According to `nginx`'s documentation (https://nginx.org/en/docs/http/ngx_http_upstream_module.html#var_upstream_response_time)
 
-> $upstream_response_time
+> `$upstream_response_time`
 >
 > keeps time spent on receiving the response from the upstream server;
 > the time is kept in seconds with millisecond resolution.
