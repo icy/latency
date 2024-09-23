@@ -8,6 +8,16 @@ https://www.cloudflare.com/learning/performance/glossary/what-is-latency/
 
 (Yes this is the right definition of `networking latency`)
 
+NOTE: Accoring to this definition, the `time` output from `ping` command is not latency. 
+In the following output, `time=35.2 ms`, which is `RTT` (round-trip time). It's pretty double of `latency` 
+(aka, the latency in this case is about `35.2/2 ~ 17.6ms`. However, `RTT = 2 * latency` is not always true.
+
+```
+$ ping 1.1.1.1 -c 1
+PING 1.1.1.1 (1.1.1.1) 56(84) bytes of data.
+64 bytes from 1.1.1.1: icmp_seq=1 ttl=49 time=35.2 ms
+```
+
 ### Network latency from a Mozilla web performance article
 
 https://developer.mozilla.org/en-US/docs/Web/Performance/Understanding_latency
